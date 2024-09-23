@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Componentes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h1>Configuración del Equipo</h1>
+        <form id="componentForm">
+            <label for="ubicacion">Ubicación:</label>
+            <select id="ubicacion" required>
+                <option value="">Seleccione...</option>
+                <option value="Colegio de la Presentación Centro">Colegio de la Presentación Centro</option>
+                <option value="Colegio de la Presentación Fatima">Colegio de la Presentación Fatima</option>
+                <option value="Colegio de la Presentación Ferias">Colegio de la Presentación Ferias</option>
+                <option value="Colegio de la Presentación Zipaquira">Colegio de la Presentación Zipaquira</option>
+                <option value="Colegio de la Presentación Ubate">Colegio de la Presentación Ubate</option>
+                <option value="Colegio de la Presentación Tunja">Colegio de la Presentación Tunja</option>
+                <option value="Otra">Otra (Añadir nueva)</option>
+            </select>
+
+            <label for="dependencia">Dependencia:</label>
+            <select id="dependencia" required>
+                <option value="">Seleccione...</option>
+                <option value="rectoria">Rectoria </option>
+                <option value="secretaria">Secretaria</option>
+                <option value="pagaduria">Pagaduria</option>
+                <option value="coordinacion">Coordinación</option>
+                <option value="psicologia">Psicologia</option>
+                <option value="sistemaspria">Sistemas Primaria</option>
+                <option value="sistemasbachi">Sistemas Bachillerato</option>
+            </select>
+
+            <label for="procesador">Procesador:</label>
+            <select id="procesador" required>
+                <option value="">Seleccione...</option>
+                <option value="Core i3">Core i3</option>
+                <option value="Core i5">Core i5</option>
+                <option value="Core i7">Core i7</option>
+                <option value="Core i9">Core i9</option>
+            </select>
+
+            <label for="memoria">Memoria (GB):</label>
+            <select id="memoria" required>
+                <option value="">Seleccione...</option>
+                <option value="4">4GB</option>
+                <option value="8">8GB</option>
+                <option value="16">16GB</option>
+                <option value="32">32GB</option>
+            </select>
+
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" placeholder="Ingrese la marca" required>
+
+            <label for="serial">Serial:</label>
+            <input type="text" id="serial" placeholder="Ingrese el serial" required>
+
+            <label for="discoDuro">Disco Duro (GB):</label>
+            <input type="number" id="discoDuro" placeholder="Ingrese capacidad del disco duro" required>
+
+            <label for="board">Board (Motherboard):</label>
+            <input type="text" id="board" placeholder="Ingrese el modelo del board" required>
+
+
+
+            <div id="nuevaUbicacionContainer" style="display:none;">
+                <label for="nuevaUbicacion">Nueva Ubicación:</label>
+                <input type="text" id="nuevaUbicacion" placeholder="Ingrese nueva ubicación">
+            </div>
+
+            <button type="submit">Agregar Componente</button>
+        </form>
+
+        <h3>Componentes Seleccionados:</h3>
+        <ul id="componentList"></ul>
+        <button id="finalizar" onclick="finalizarSelección()">Finalizar y ver resumen</button>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

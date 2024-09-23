@@ -23,6 +23,7 @@ h3 {
 label {
     display: block;
     margin-top: 10px;
+    font-weight: 700;
 }
 
 input,

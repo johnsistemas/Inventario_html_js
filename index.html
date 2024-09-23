@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleccionar Componentes</title>
+    <title>Inventarios</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -62,7 +62,13 @@
             <input type="text" id="serial" placeholder="Ingrese el serial" required>
 
             <label for="discoDuro">Disco Duro (GB):</label>
-            <input type="number" id="discoDuro" placeholder="Ingrese capacidad del disco duro" required>
+            <select id="discoDuro" id="discoDuro" required>
+                <option value="">Seleccione...</option>
+                <option value="128">128GB</option>
+                <option value="256">256GB</option>
+                <option value="500">500GB</option>
+                <option value="1000">1000GB</option>
+            </select>
 
             <label for="board">Board (Motherboard):</label>
             <input type="text" id="board" placeholder="Ingrese el modelo del board" required>

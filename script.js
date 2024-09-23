@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         componentes.push(componente);
 
-        // Mostrar los componentes en pantalla
+        // Mostrar el listado de los componentes en pantalla
         const listItem = document.createElement('li');
         listItem.textContent = `Ubicación: ${ubicacion},dependencia: ${dependencia},Procesador: ${procesador}, Memoria: ${memoria} GB, Marca: ${marca}, Serial: ${serial}, Disco Duro: ${discoDuro} GB, Board: ${board} `;
         componentList.appendChild(listItem);

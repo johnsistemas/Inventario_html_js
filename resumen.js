@@ -59,13 +59,13 @@ document.addEventListener('DOMContentLoaded', function () {
             doc.text('Ubicación: ', 10, yPosition);
             doc.setFont('helvetica', 'normal');
             doc.text(componente.ubicacion, 40, yPosition);
-            yPosition += 20;
+            yPosition += 10;
 
             doc.setFont('helvetica', 'bold');
             doc.text('Ubicación: ', 10, yPosition);
             doc.setFont('helvetica', 'normal');
             doc.text(componente.dependencia, 40, yPosition);
-            yPosition += 20;
+            yPosition += 10;
 
             doc.setFont('helvetica', 'bold');
             doc.text('Procesador: ', 10, yPosition);
